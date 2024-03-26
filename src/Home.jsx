@@ -19,6 +19,11 @@ export default function Home() {
           </button>
         </div>
       </div>
+      <div className="w-full flex flex-col justify-center text-center rounded-b-xl space-y-8">
+        <div className="font-kinetika_bold text-6xl">
+          Des corners à votre image
+        </div>
+      </div>
     </>
   );
 }
