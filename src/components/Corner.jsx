@@ -2,7 +2,7 @@ import React from "react";
 
 const Corner = ({ title, description, urlIcon }) => {
   return (
-    <article className="flex flex-col items-center p-[5%]">
+    <article className="flex flex-col items-center p-[5%] min-w-44">
       <div className="flex justify-center">
         <img src={urlIcon} alt="Les Corners" className="h-48" />
       </div>
