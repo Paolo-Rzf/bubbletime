@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./header.css"
 
 export default function Header() {
   let links = [
@@ -12,7 +13,8 @@ export default function Header() {
 
   return (
     <>
-      <div className="w-full sticky top-0 bg-[#f7e9c7] ">
+      <div className="w-full sticky top-0 bg-[#f7e9c7]">
+        <div className="box bg-[#81a45d] h-10 w-full"></div>
         <ul
           className={`flex justify-between font-kinetika_bold text-black last:p-4`}
         >
