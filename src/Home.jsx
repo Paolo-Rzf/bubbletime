@@ -69,7 +69,7 @@ export default function Home() {
       <MainArticle
         title="Notre savoir faire"
         description="Partager c'est grandir ensemble"
-        bgColor="bg-[url('images/bg_savoir_faire.png')] bg-cover"
+        bgColor="bg-[url('/images/bg_savoir_faire.png')] bg-cover"
       >
         <div className="grid grid-cols-3 gap-[5%] mt-12">
           <ButtonInternalShadow bgColor="bg-[#f7e9c7]" title="Notre chef cuisto" />
