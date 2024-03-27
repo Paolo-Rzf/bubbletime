@@ -13,20 +13,20 @@ export default function Header() {
 
   return (
     <>
-      <div className="w-full sticky top-0 bg-[#f7e9c7]">
+      <nav className="w-full sticky top-0 bg-[#f7e9c7] z-10">
         <div className="box bg-[#81a45d] h-10 w-full"></div>
         <ul
           className={`flex justify-between font-kinetika_bold text-black last:p-4`}
         >
           {links.map((link) => (
-            <li key={link.name} className="text-xl">
+            <li key={link.name} className="text-sm text-center min-w-36">
               <span className="cursor-pointer">
                 {link.name}
               </span>
             </li>
           ))}
         </ul>
-      </div>
+      </nav>
     </>
   );
 }
