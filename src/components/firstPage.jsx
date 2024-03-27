@@ -5,13 +5,13 @@ import ButtonInternalShadow from "./ButtonInternalShadow";
 export default function FirstPage() {
   return (
     <>
-      <section className="w-full flex flex-col justify-center bgOrangeGardient text-center rounded-b-xl space-y-8 h-80">
+      <section className="w-full flex flex-col justify-center items-center bgOrangeGardient text-center rounded-b-xl space-y-8 h-80">
         <div>
           <h1 className="font-kinetika_bold text-6xl">
             Les corners Bubble Sun Ice
           </h1>
         </div>
-        <div>
+        <div className="w-[70%]">
           <span className="font-Kinetika_regular text-4xl">
             Vous avez l'espace, nous avons le commerce idéal à implanter au sein
             de vos enseignes
@@ -21,13 +21,13 @@ export default function FirstPage() {
           <ButtonInternalShadow bgColor="bg-[#81a45d]" />
         </div>
       </section>
-      <section className="w-full flex flex-col justify-center text-center rounded-b-xl space-y-8 py-8">
+      <section className="w-full flex flex-col justify-center items-center text-center rounded-b-xl space-y-8 py-8">
         <div>
           <span className="font-kinetika_bold text-6xl">
             Des corners à votre image
           </span>
         </div>
-        <div>
+        <div className="w-[70%]">
           <span className="font-Kinetika_regular text-4xl">
             Un corner au sein de votre enseigne pour accroître votre clientèle
             sans augmenter vos frais
