@@ -1,10 +1,11 @@
 import React from "react";
 import "../styles/home.css";
+import ButtonInternalShadow from "./ButtonInternalShadow";
 
-export default function firstPage() {
+export default function FirstPage() {
   return (
     <>
-      <div className="w-full flex flex-col justify-center bgOrangeGardient text-center rounded-b-xl space-y-8 h-80">
+      <section className="w-full flex flex-col justify-center bgOrangeGardient text-center rounded-b-xl space-y-8 h-80">
         <div>
           <h1 className="font-kinetika_bold text-6xl">
             Les corners Bubble Sun Ice
@@ -17,12 +18,10 @@ export default function firstPage() {
           </span>
         </div>
         <div className="flex justify-center">
-          <button className="outline-none bg-[#81a45d] py-4 px-16 rounded-full font-kinetika_bold text-3xl">
-            Être franchisé
-          </button>
+          <ButtonInternalShadow bgColor="bg-[#81a45d]" />
         </div>
-      </div>
-      <div className="w-full flex flex-col justify-center text-center rounded-b-xl space-y-8">
+      </section>
+      <section className="w-full flex flex-col justify-center text-center rounded-b-xl space-y-8 py-8">
         <div>
           <span className="font-kinetika_bold text-6xl">
             Des corners à votre image
@@ -72,7 +71,7 @@ export default function firstPage() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }
