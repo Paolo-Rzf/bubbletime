@@ -1,11 +1,12 @@
 import React from "react";
 import Header from "./components/Header";
+import "./styles/home.css"
 
 export default function Home() {
   return (
     <>
       <Header />
-      <div className="w-full flex flex-col justify-center bg-[#ff7e00] text-center rounded-b-xl space-y-8">
+      <div className="w-full flex flex-col justify-center bgOrangeGardient text-center rounded-b-xl space-y-8">
         <div className="font-kinetika_bold text-6xl">
           Les corners Bubble Sun Ice
         </div>

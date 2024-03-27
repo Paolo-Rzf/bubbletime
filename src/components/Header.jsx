@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./header.css"
+import "../styles/header.css"
 
 export default function Header() {
   let links = [
