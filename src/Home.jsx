@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <div className="w-full flex flex-col justify-center bg-[#ff7e00] text-center rounded-b-xl space-y-8">
+      <div className="w-full flex flex-col justify-center bg-gradient-to-b from-white to-[#ff7e00] text-center rounded-b-xl space-y-8">
         <div className="font-kinetika_bold text-6xl">
           Les corners Bubble Sun Ice
         </div>
@@ -45,7 +45,7 @@ export default function Home() {
               <img src="" alt="L'équipe " />
             </div>
             <h1 className="font-kinetika_bold text-3xl">L'équipe</h1>
-            <div className="w-1/2">
+            <div className="w-[55%]">
               <span className="font-Kinetika_regular text-2xl">
                 Nullement besoin de vous lancer dans une campage de recrutement
                 on s'occupe de tout et restons disponible
