@@ -1,11 +1,13 @@
 import React from "react";
+import "css/ButtonInternalShadow.css"
 
-const ButtonInternalShadow = ({ bgColor }) => {
+const ButtonInternalShadow = ({ bgColor, title }) => {
   return (
-    <div className="flex justify-center">
-      <button className={`outline-none ${bgColor} py-4 px-16 rounded-full font-kinetika_bold text-xl relative overflow-hidden`}>
-        Être franchisé
+    <div className="flex justify-center fit-content relative">
+      <button className={`outline-none ${bgColor} py-4 rounded-full font-kinetika_bold text-xl relative overflow-hidden z-[2] w-72`}>
+        {title}
       </button>
+      <div className="oval_shadow z-[1]"></div>
     </div>
   );
 };

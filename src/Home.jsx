@@ -3,24 +3,18 @@ import Header from "./components/Header";
 import ButtonInternalShadow from "./components/ButtonInternalShadow";
 import Corner from "components/Corner";
 import ThreeArticles from "components/ThreeArticles";
-import "./styles/home.css";
+import MainArticle from "components/MainArticle";
 
 export default function Home() {
   return (
     <>
       <Header />
-      <div className="w-full flex flex-col justify-center bgOrangeGardient text-center rounded-b-xl space-y-8 h-80">
-        <div className="font-kinetika_bold text-4xl">
-          Les corners Bubble Sun Ice
-        </div>
-        <div className="font-Kinetika_regular text-2xl px-[8%]">
-          Vous avez l'espace, nous avons le commerce idéal à implanter au sein
-          de vos enseignes
-        </div>
-        <div className="flex justify-center">
-          <ButtonInternalShadow bgColor="bg-[#81a45d]" />
-        </div>
-      </div>
+      <MainArticle
+        title="Les corners Bubble Sun Ice"
+        description="Vous avez l'espace, nous avons le commerce idéal à implanter au sein de vos enseignes"
+      >
+        <ButtonInternalShadow bgColor="bg-[#81a45d]" title="Être franchisé" />
+      </MainArticle>
       <ThreeArticles
         title="Des corners à votre image"
         description="Un corner au sein de votre enseigne pour accroître votre clientèle sans augmenter vos frais"
@@ -39,6 +33,37 @@ export default function Home() {
           urlIcon="icons/ecorespo.svg"
           title="Ecoresponsable"
           description="Dans une démarche RSE, nos fournisseurs, produits et consommables sont écoresponsables et circuits courts"
+        />
+      </ThreeArticles>
+      <MainArticle
+        title="Des offres 100% personnalisables"
+        description="Faites découvrir à votre clientèle des nouvelles saveurs tout en s'adoptant à leur besoin"
+        bgColor="bg-[#f7e9c7]"
+      >
+        <div className="grid grid-cols-3 gap-[5%]">
+          <ButtonInternalShadow bgColor="bg-[#81a45d]" title="Nos recettes" />
+          <ButtonInternalShadow bgColor="bg-[#81a45d]" title="Nos fournisseurs" />
+          <ButtonInternalShadow bgColor="bg-[#81a45d]" title="Nos machines" />
+        </div>
+      </MainArticle>
+      <ThreeArticles
+        title="Les corners nomades"
+        description="Besoin d'être présent à un évènement, nous avons la solution portative"
+      >
+        <Corner
+          urlIcon="icons/ecorespo.svg"
+          title="Les Corners nomades"
+          description="100% personnalisable, ils vous accompagneront avec tout l'équipement nécessaire sur vos évènements"
+        />
+        <Corner
+          urlIcon="icons/ecorespo.svg"
+          title="Évènements"
+          description="EVJF, anniversaire, Baby Shower, Gender reveal... Mais aussi fêtes d'entreprise, de la ville, évènements sportifs vous pourrez être présent facilement"
+        />
+        <Corner
+          urlIcon="icons/ecorespo.svg"
+          title="Communication"
+          description="Notre équipe de communication, peut vous aider à promouvoir vos évènements et ou trouver les évènements stratégique pour votre commerce"
         />
       </ThreeArticles>
     </>
