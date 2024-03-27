@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <div className="w-full flex flex-col justify-center bgOrangeGardient text-center rounded-b-xl space-y-8">
+      <div className="w-full flex flex-col justify-center bgOrangeGardient text-center rounded-b-xl space-y-8 h-80">
         <div className="font-kinetika_bold text-6xl">
           Les corners Bubble Sun Ice
         </div>
