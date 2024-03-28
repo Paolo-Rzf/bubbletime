@@ -1,14 +1,12 @@
 import React from "react";
-import Header from "./components/Header";
-import ButtonInternalShadow from "./components/ButtonInternalShadow";
+import ButtonInternalShadow from "../components/ButtonInternalShadow";
 import Corner from "components/Corner";
 import ThreeArticles from "components/ThreeArticles";
 import MainArticle from "components/MainArticle";
 
-export default function Home() {
+export default function Franchise() {
   return (
     <>
-      <Header />
       <MainArticle
         title="Les corners Bubble Sun Ice"
         description="Vous avez l'espace, nous avons le commerce idéal à implanter au sein de vos enseignes"
@@ -69,7 +67,7 @@ export default function Home() {
       <MainArticle
         title="Notre savoir faire"
         description="Partager c'est grandir ensemble"
-        bgColor="bg-[url('/images/bg_savoir_faire.png')] bg-cover"
+        bgColor="bg-[url('images/bg_savoir_faire.png')] bg-cover"
       >
         <div className="grid grid-cols-3 gap-[5%] mt-12">
           <ButtonInternalShadow bgColor="bg-[#f7e9c7]" title="Notre chef cuisto" />
