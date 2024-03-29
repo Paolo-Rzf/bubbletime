@@ -1,5 +1,5 @@
 import React from "react";
-import "css/ButtonInternalShadow.css"
+import OvalShadow from "./OvalShadow";
 
 const ButtonInternalShadow = ({ bgColor, title }) => {
   return (
@@ -7,7 +7,7 @@ const ButtonInternalShadow = ({ bgColor, title }) => {
       <button className={`outline-none ${bgColor} py-4 rounded-full font-kinetika_bold text-xl relative overflow-hidden z-[2] w-72`}>
         {title}
       </button>
-      <div className="oval_shadow z-[1]"></div>
+      <OvalShadow />
     </div>
   );
 };

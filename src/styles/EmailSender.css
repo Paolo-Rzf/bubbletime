@@ -1,0 +1,32 @@
+input[type="email"] {
+  width: 100%;
+  transition: border-color 0.3s;
+  border: 1px solid #ccc; /* Ajout d'une bordure par défaut */
+  outline: none;
+}
+
+input[type="email"].error {
+  border-color: red;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn {
+  background: #F7E9C7;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #f5c75a;
+  text-decoration: none;
+}

@@ -3,6 +3,7 @@ import ButtonInternalShadow from "../components/ButtonInternalShadow";
 import Corner from "components/Corner";
 import ThreeArticles from "components/ThreeArticles";
 import MainArticle from "components/MainArticle";
+import EmailSender from "components/EmailSender";
 
 export default function Franchise() {
   return (
@@ -75,6 +76,22 @@ export default function Franchise() {
           <ButtonInternalShadow bgColor="bg-[#f7e9c7]" title="Gestion des events" />
         </div>
       </MainArticle>
+      <section className="grid grid-cols-3">
+        <div className="bg-[#f7e9c7] col-span-2 p-12 pl-[16%]">
+          <div className="font-kinetika_bold text-4xl mb-3">
+            Bien plus qu'un Corner, une collaboration sur du long therme
+          </div>
+          <div className="font-Kinetika_regular text-2xl">
+            Consultez en détail nos offres, services et garanties.
+          </div>
+        </div>
+        <div className="bg-[#81a45d] py-12 px-5 border-[#ba814a] border-[10px] pr-[16%]">
+          <h1 className="font-kinetika_bold text-xl">
+            Recevez immédiatemnt notre plaquette et rejoignez l'aventure Bubble Sun Ice
+          </h1>
+          <EmailSender />
+        </div>
+      </section>
     </>
   );
 }
