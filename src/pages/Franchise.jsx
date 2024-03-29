@@ -1,6 +1,8 @@
 import React from "react";
 import ButtonInternalShadow from "../components/ButtonInternalShadow";
 import Corner from "components/Corner";
+import LeftCorner from "components/LeftCorner";
+import RightCorner from "components/RightCorner";
 import ThreeArticles from "components/ThreeArticles";
 import MainArticle from "components/MainArticle";
 import EmailSender from "components/EmailSender";
@@ -18,22 +20,20 @@ export default function Franchise() {
         title="Des corners à votre image"
         description="Un corner au sein de votre enseigne pour accroître votre clientèle sans augmenter vos frais"
       >
-        <Corner
+        <LeftCorner
           urlIcon="icons/corner.svg"
           title="Les Corners"
           description="100% personnalisable, il vous suffit de disposer de au minimum 20m2 au sein de votre établissement pour l'accueillir"
-          position="left"
         />
         <Corner
           urlIcon="icons/team.svg"
           title="L'équipe"
           description="Nullement besoin de vous lancer dans une campage de recrutement on s'occupe de tout et restons disponible"
         />
-        <Corner
+        <RightCorner
           urlIcon="icons/ecorespo.svg"
           title="Ecoresponsable"
           description="Dans une démarche RSE, nos fournisseurs, produits et consommables sont écoresponsables et circuits courts"
-          position="right"
         />
       </ThreeArticles>
       <MainArticle
@@ -51,22 +51,20 @@ export default function Franchise() {
         title="Les corners nomades"
         description="Besoin d'être présent à un évènement, nous avons la solution portative"
       >
-        <Corner
+        <LeftCorner
           urlIcon="icons/ecorespo.svg"
           title="Les Corners nomades"
           description="100% personnalisable, ils vous accompagneront avec tout l'équipement nécessaire sur vos évènements"
-          position="left"
         />
         <Corner
           urlIcon="icons/ecorespo.svg"
           title="Évènements"
           description="EVJF, anniversaire, Baby Shower, Gender reveal... Mais aussi fêtes d'entreprise, de la ville, évènements sportifs vous pourrez être présent facilement"
         />
-        <Corner
+        <RightCorner
           urlIcon="icons/ecorespo.svg"
           title="Communication"
           description="Notre équipe de communication, peut vous aider à promouvoir vos évènements et ou trouver les évènements stratégique pour votre commerce"
-          position="right"
         />
       </ThreeArticles>
       <MainArticle
