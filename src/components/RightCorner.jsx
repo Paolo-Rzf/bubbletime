@@ -23,11 +23,9 @@ const RightCorner = ({ title, description, urlIcon }) => {
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       const entry = entries[0];
-      console.log("entry", entry);
       setMyElementIsVisible(entry.isIntersecting);
     })
     observer.observe(myRef.current);
-    return () => observer.unobserve(myRef.current); // Cleanup function
   }, [])
 
   return (
