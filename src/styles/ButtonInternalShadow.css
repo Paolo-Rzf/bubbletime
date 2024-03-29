@@ -1,13 +1,16 @@
-.oval_shadow {
-  content: "";
-  position: absolute;
-  top: 75%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80%;
-  height: 50%;
-  border-radius: 50%;
-  background-color: #fff;
-  filter: drop-shadow(0px 5px 7px #000000);
-  opacity: 0.4;
+#monBouton {
+  transition: background-color 0.3s ease;
+}
+
+#monText {
+  transition: opacity 1s ease;
+}
+
+#monBouton:hover {
+  background-color: transparent;
+}
+
+#monBouton:hover + #monText {
+  opacity: 0;
+  transition: opacity 0s ease;
 }

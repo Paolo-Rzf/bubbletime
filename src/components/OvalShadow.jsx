@@ -1,9 +1,9 @@
 import React from 'react'
-import "css/ButtonInternalShadow.css"
+import "css/OvalShadow.css"
 
 const OvalShadow = () => {
   return (
-    <div className="oval_shadow z-[1]"></div>
+    <div className="oval_shadow z-[1]" id="monText"></div>
   )
 }
 

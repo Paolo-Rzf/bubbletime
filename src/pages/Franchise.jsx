@@ -22,6 +22,7 @@ export default function Franchise() {
           urlIcon="icons/corner.svg"
           title="Les Corners"
           description="100% personnalisable, il vous suffit de disposer de au minimum 20m2 au sein de votre établissement pour l'accueillir"
+          position="left"
         />
         <Corner
           urlIcon="icons/team.svg"
@@ -32,6 +33,7 @@ export default function Franchise() {
           urlIcon="icons/ecorespo.svg"
           title="Ecoresponsable"
           description="Dans une démarche RSE, nos fournisseurs, produits et consommables sont écoresponsables et circuits courts"
+          position="right"
         />
       </ThreeArticles>
       <MainArticle
@@ -53,6 +55,7 @@ export default function Franchise() {
           urlIcon="icons/ecorespo.svg"
           title="Les Corners nomades"
           description="100% personnalisable, ils vous accompagneront avec tout l'équipement nécessaire sur vos évènements"
+          position="left"
         />
         <Corner
           urlIcon="icons/ecorespo.svg"
@@ -63,6 +66,7 @@ export default function Franchise() {
           urlIcon="icons/ecorespo.svg"
           title="Communication"
           description="Notre équipe de communication, peut vous aider à promouvoir vos évènements et ou trouver les évènements stratégique pour votre commerce"
+          position="right"
         />
       </ThreeArticles>
       <MainArticle
