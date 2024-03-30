@@ -1,4 +1,4 @@
-import React, {useRef, useEffect, useState} from "react";
+import React, { useRef, useEffect, useState } from "react";
 import OvalShadow from "./OvalShadow";
 import styled, { keyframes } from 'styled-components';
 import { CSSTransition } from 'react-transition-group';
@@ -16,7 +16,7 @@ const StyledItem = styled.div`
   animation: ${moveOutAnimation} 1s ease forwards;
 `;
 
-const LeftCorner = ({ title, description, urlIcon }) => {
+const LeftCorner = ({ title, description, urlIcon, bgColor="" }) => {
   const myRef = useRef();
   const [myElementIsVisible, setMyElementIsVisible] = useState();
 
@@ -35,15 +35,12 @@ const LeftCorner = ({ title, description, urlIcon }) => {
           <CSSTransition in={true} timeout={1000} classNames="item">
             <StyledItem>
               <div className="flex justify-center relative w-full">
-                <img src={urlIcon} alt="Les Corners" className="h-48 z-[2] bg-white p-3 w-full" />
+                <img src={urlIcon} alt="Les Corners" className={`h-48 z-[2] p-2 w-full ${bgColor || "bg-white"}`} />
                 <OvalShadow />
               </div>
             </StyledItem>
           </CSSTransition> :
-          <div className="flex justify-center relative w-full">
-            <img src={urlIcon} alt="Les Corners" className="h-48 z-[2] bg-white p-3 w-full" />
-            <OvalShadow />
-          </div>
+          <div className="h-48"></div>
       }
       <h1 className="font-kinetika_bold text-xl py-5">{title}</h1>
       <div>

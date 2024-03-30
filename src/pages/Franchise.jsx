@@ -52,7 +52,7 @@ export default function Franchise() {
         description="Besoin d'être présent à un évènement, nous avons la solution portative"
       >
         <LeftCorner
-          urlIcon="icons/ecorespo.svg"
+          urlIcon="icons/corner_nomade.svg"
           title="Les Corners nomades"
           description="100% personnalisable, ils vous accompagneront avec tout l'équipement nécessaire sur vos évènements"
         />
